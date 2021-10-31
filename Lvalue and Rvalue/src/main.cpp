@@ -11,7 +11,7 @@ void SetValue(const int& value)
 	std::cout << value;
 }
 
-void PrintName(std::string& name)
+void PrintName(const std::string& name)
 {
 	std::cout << "Left Value : " << name << std::endl;
 }
@@ -21,6 +21,7 @@ void PrintName(std::string&& name)
 	name += " and You can even change it in this function!!!!!";
 	std::cout << "Right Value : " << name << std::endl;
 }
+
 
 int main()
 {
@@ -36,4 +37,5 @@ int main()
 
 	PrintName(lvalue);
 	PrintName("this isn't a lvalue, but a rvalue");
+
 }
